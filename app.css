@@ -86,9 +86,9 @@ nav{
         font-size: 12px;
 
     }
-    /* Style the button */
+    
     button {
-    background-color: #E1C118; /* Green */
+    background-color: #E1C118; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -101,9 +101,8 @@ nav{
     border-radius: 8px;
     }
 
-/* Change the color of the button when hovered */
 button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049; 
 }
     #productpicture{
         background-color: cadetblue;
