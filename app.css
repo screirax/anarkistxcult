@@ -74,6 +74,10 @@ nav{
 
     #productinfo{
         background-color: rgb(231, 231, 231);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 100%;
         height: 600px;
 
@@ -100,7 +104,7 @@ nav{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 25px 50px;
+    margin: 25px;
     cursor: pointer;
     border-radius: 8px;
     }
@@ -111,8 +115,14 @@ button:hover {
     #productpicture{
         margin-top: 25px;
         background-color: rgb(231, 231, 231);
-        width: 100%;
+        max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+        margin: 0 auto;
         height: 600px;
+    }
+    img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove extra space below the image */
     }
 
     footer{
@@ -120,9 +130,22 @@ button:hover {
         width: 100%;
         height: 75px;
     }
-
+    footer p{
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 150px;
+    }
+    footer h3{
+        text-align: left;
+        margin-left: 150px;
+    }
 }
-
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    #productinfo{
+        height: 600px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
@@ -135,14 +158,17 @@ button:hover {
         margin-left: 50px;
         margin-top: 80px;
         font-size: 60px;
+        text-align: center;
         
     }
     p{
         margin-left: 50px;
         margin-top: 25px;
         font-size: 18px;
+        text-align: center;
 
     }
+    
     video{
         height: 825px;
     }
@@ -153,11 +179,11 @@ button:hover {
     }
 
     #productinfo{
-        height: 825px;
+        height: 850px;
 
     }
     #productpicture{
-        height: 825px;
+        height: 950px;
     }
     footer{
         height: 100px;
