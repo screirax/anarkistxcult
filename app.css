@@ -55,6 +55,9 @@ nav{
 footer{
     display: none;
 }
+.banner img{
+    display: none;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     nav{
@@ -62,6 +65,9 @@ footer{
     }
     #burger{
         width: 75px;
+    }
+    .banner img{
+        display: block;
     }
     .barone, .bartwo, .barthree {
         width: 50px;
@@ -71,7 +77,6 @@ footer{
         transition: 0.4s;
       }
       video{
-        background-color: blueviolet;
         display: grid;
         width: 100%;
         height: 600px;
