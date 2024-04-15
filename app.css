@@ -39,7 +39,9 @@ nav{
     transform: translate(0, -11px) rotate(45deg);
   }
 
-
+#mobileonly{
+    
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
