@@ -40,11 +40,15 @@ nav{
   }
 
 #mobileonly{
-    
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    nav{
+        background-color: burlywood;
+    }
+
     .barone, .bartwo, .barthree {
         width: 50px;
         height: 5px;
