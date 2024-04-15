@@ -16,7 +16,7 @@ nav{
     display: grid;
     grid-template-columns: 3fr 97fr;
     align-items: center;
-    height: 75px;
+    height: 100px;
     padding:0px 5px 0px 5px;
 }
 #burger{
@@ -46,13 +46,23 @@ nav{
 #mobileonly{
 
 }
-
+#product{
+    display: none;
+}
+#productinfo{
+    display: none;
+}
+footer{
+    display: none;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     nav{
-        background-color: burlywood;
+        background-color: #e7e7e7;
     }
-
+    #burger{
+        width: 75px;
+    }
     .barone, .bartwo, .barthree {
         width: 50px;
         height: 5px;
@@ -73,7 +83,7 @@ nav{
     }
 
     #productinfo{
-        background-color: rgb(231, 231, 231);
+        background-color: #e7e7e7;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -115,17 +125,18 @@ button:hover {
     #productpicture{
         margin-top: 25px;
         background-color: rgb(231, 231, 231);
-        max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+        max-width: 100%; 
         margin: 0 auto;
         height: 600px;
     }
     img {
-        max-width: 100%; /* Ensure the image doesn't exceed the container width */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Remove extra space below the image */
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
     }
 
     footer{
+        display: block;
         background-color: chartreuse;
         width: 100%;
         height: 75px;
@@ -133,11 +144,11 @@ button:hover {
     footer p{
         text-align: left;
         margin-top: 5px;
-        margin-left: 150px;
+        margin-left: 75px;
     }
     footer h3{
         text-align: left;
-        margin-left: 150px;
+        margin-left: 75px;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -145,11 +156,18 @@ button:hover {
     #productinfo{
         height: 600px;
     }
+    footer p{
+        margin-left: 100px;
+    }
+    footer h3{
+        margin-left: 100px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
+    
     nav{
         height: 100px;
     }
@@ -188,4 +206,11 @@ button:hover {
     footer{
         height: 100px;
     }
+    footer p{
+        margin-left: 150px;
+    }
+    footer h3{
+        margin-left: 150px;
+    }
+
 }
