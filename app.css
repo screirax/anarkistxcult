@@ -16,7 +16,7 @@ nav{
     display: grid;
     grid-template-columns: 3fr 97fr;
     align-items: center;
-    height: 100px;
+    height: 50px;
     padding:0px 5px 0px 5px;
 }
 #burger{
@@ -26,7 +26,7 @@ nav{
     cursor: pointer;
 }
 .barone, .bartwo, .barthree {
-    width: 50px;
+    width: 30px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
@@ -46,6 +46,14 @@ nav{
 #mobileonly{
 
 }
+.barlow-semi condensed-regular {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
 #product{
     display: none;
 }
@@ -63,8 +71,11 @@ footer{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .mobileonly{
+        display: none;
+    }
     nav{
+        height: 100px;;
         margin-top: -10px;
         background-color: #e7e7e7;
     }
@@ -81,11 +92,12 @@ footer{
         margin: 6px 0;
         transition: 0.4s;
       }
-    .cormmercialvideo{
-        display: block;
+      video{
+        display: grid;
         width: 100%;
-        height: auto;
-    }    #product{
+        height: 600px;
+    }
+    #product{
         display: grid;
         align-items: center;
         grid-template-columns: 55fr 45fr;
@@ -105,12 +117,15 @@ footer{
         margin-left: 50px;
         margin-top: 80px;
         font-size: 40px;
+        font-family: "Barlow Semi Condensed", sans-serif;
         
     }
     p{
         margin-left: 50px;
         margin-top: 25px;
         font-size: 12px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+
 
     }
     
@@ -162,7 +177,11 @@ button:hover {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px){
-
+    .cormmercialvideo{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
     #productinfo{
         height: 600px;
     }
@@ -188,14 +207,13 @@ button:hover {
         margin-top: 80px;
         font-size: 60px;
         text-align: center;
-        
+
     }
     p{
         margin-left: 50px;
         margin-top: 25px;
         font-size: 18px;
         text-align: center;
-
     }
     
     video{
