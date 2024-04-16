@@ -113,20 +113,20 @@ footer{
         height: 600px;
 
     }
-    h1{
-        margin-left: 50px;
+    .barlow-semi-condensed-regular {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 30px;
         margin-top: 80px;
-        font-size: 40px;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        
+        font-size: 45px;
+        text-align: center;
     }
-    p{
-        margin-left: 50px;
-        margin-top: 25px;
-        font-size: 12px;
+    .barlow-semi-condensed-regular-p{
         font-family: "Barlow Semi Condensed", sans-serif;
-
-
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
     }
     
     button {
@@ -160,7 +160,8 @@ button:hover {
     }
 
     footer{
-        display: block;
+        display: grid;
+        grid-template-columns: 45fr 55fr;
         background-color: chartreuse;
         width: 100%;
         height: 75px;
@@ -174,9 +175,40 @@ button:hover {
         text-align: left;
         margin-left: 75px;
     }
+    .icons{
+        display: grid;
+        height: 75px;
+        width: auto;
+        background-color: #333;
+        justify-items: center; 
+        text-align: center;
+    }
+    .icons p {
+        margin: 0; /* Remove default margin */
+    }
+    
+    .icons a {
+        display: block; /* Ensure the icon is displayed as a block element */
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
+        background-color: #ccc; /* Example background color */
+        margin-top: 5px; /* Adjust margin as needed */
+    }
+
+      
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px){
+    .barlow-semi-condensed-regular {
+        font-size: 50px;
+    }
+    .barlow-semi-condensed-regular-p{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+    }
+
     .cormmercialvideo{
         display: block;
         width: 100%;
@@ -191,6 +223,10 @@ button:hover {
     footer h3{
         margin-left: 100px;
     }
+    button{
+        height: 50px;
+        width: 125px;    
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -201,21 +237,35 @@ button:hover {
         margin-top: 10px;
         height: 100px;
     }
-    
-    h1{
+/*    .barlow-semi-condensed-regular {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 50px;
+        margin-top: 80px;
+        font-size: 60px;
+        text-align: center;
+    }
+    /*h1{
         margin-left: 50px;
         margin-top: 80px;
         font-size: 60px;
         text-align: center;
 
+    }*/
+    .barlow-semi-condensed-regular-p{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
     }
-    p{
+    /*p{
         margin-left: 50px;
         margin-top: 25px;
         font-size: 18px;
         text-align: center;
     }
-    
+    */
     video{
         height: 825px;
     }
