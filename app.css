@@ -29,30 +29,31 @@ body{
     text-align: left;
     font-weight: 500;
     font-style: normal;
-    font-size: 28px;
+    font-size: 22px;
     margin-top: 20px;
     margin-left: 40px;
     
 }
 .barlow-semi-condensed-regular-h1mobile-h3{
+    font-family: "Permanent Marker", cursive;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: px;
+    margin-left: 40px;
+    
+
+}
+.barlow-semi-condensed-regular-p{
     font-family: "Barlow Semi Condensed", sans-serif;
     display: block;
     text-align: left;
     font-weight: 400;
     font-style: normal;
-    font-size: 28px;
-    margin-top: px;
-    margin-left: 40px;
-
-}
-.barlow-semi-condensed-regular-h1mobile-p{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    display: block;
-    text-align: left;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 13px;
+    margin-top: 5px;
     margin-left: 40px;
 
 }
@@ -89,10 +90,45 @@ nav{
   }
 
 #mobileonly{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
 
 }
-
-
+.buynowmobile {
+    background-color: #E1C118; 
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px; 
+    margin-left: 40px;
+}
+.learnnowmobile {
+    background-color: #504924; 
+    border: none;
+    color: white;
+    padding: 6px 22px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px; 
+    margin-left: 10px;
+}
+.picturesmobile{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
 #product{
     display: none;
 }
@@ -259,35 +295,14 @@ button:hover {
         margin-top: 10px;
         height: 100px;
     }
-/*    .barlow-semi-condensed-regular {
-        font-family: "Barlow Semi Condensed", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        margin-left: 50px;
-        margin-top: 80px;
-        font-size: 60px;
-        text-align: center;
-    }
-    /*h1{
-        margin-left: 50px;
-        margin-top: 80px;
-        font-size: 60px;
-        text-align: center;
 
-    }*/
     .barlow-semi-condensed-regular-p{
         font-family: "Barlow Semi Condensed", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 28px;
     }
-    /*p{
-        margin-left: 50px;
-        margin-top: 25px;
-        font-size: 18px;
-        text-align: center;
-    }
-    */
+
     video{
         height: 825px;
     }
