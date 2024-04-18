@@ -9,8 +9,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(231, 231, 231);
-
+    /*
+    background-color: rgb(231, 231, 231);*/
+    background-color: #EDB1B3;
 }
 
 
@@ -62,6 +63,7 @@ body{
     margin-left: 40px;
 
 }
+/*dette er vores special fonts som vi har downloadet også skrivet lidt om i dem*/
 
 
 
@@ -149,6 +151,7 @@ nav {
     max-width: 100%; 
     height: auto; 
 }
+
 /*fjerner alt der ikke har med mobile at gøre*/ 
 #product{
     display: none;
@@ -165,7 +168,7 @@ footer{
 .cormmercialvideo{
     display: none;
 }
-
+/*fjerner alt der ikke har med mobile at gøre*/ 
 
 
 
@@ -183,16 +186,26 @@ footer{
     .bannermobile{
         display: none;
     }
+    /*fjerner alt mobile */
+    /*og får det andet frem*/
+
+
+    
     /*vi gør vores ting lidt større*/
     nav{
         height: 100px;;
-        margin-top: -10px;
+        margin-top: 10px;
+        /*
         background-color: #e7e7e7;
+        */
+        background-color: #EDB1B3;
+
     }
     #burger{
         width: 75px;
     }
     .banner img{
+        
         display: block;
 
     }
@@ -216,7 +229,9 @@ footer{
     }
     /*her kommer teksten ind som er på venstre side af vores hjemmeside*/
     #productinfo{
-        background-color: #e7e7e7;
+        /*
+        background-color: #e7e7e7;*/
+        background-color: #EDB1B3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -245,7 +260,7 @@ footer{
     button {
     background-color: #E1C118; 
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -261,7 +276,10 @@ button:hover {
 }
     #productpicture{
         margin-top: 25px;
+        /*
         background-color: rgb(231, 231, 231);
+        */
+        background-color: #EDB1B3;
         max-width: 100%; 
         margin: 0 auto;
         height: 600px;
@@ -274,11 +292,11 @@ button:hover {
     /*footer med basalt kontakt info*/
     footer{
         display: grid;
-        background-color: #b4b4b4;
+        background-color: #F75C22;
         grid-template-columns: 45fr 55fr;
         width: 100%;
-        height: 75px;
-        margin-bottom: 10px;
+        height: 100px;
+        
     }
     footer p{
         text-align: left;
@@ -311,7 +329,9 @@ button:hover {
         font-size: 12px;
     }
     /*der kommer en video ind der automatisk fælger med størrelsen */
+    
     .cormmercialvideo{
+        margin-top: 10px;
         display: block;
         width: 100%;
         height: auto;
@@ -344,10 +364,14 @@ button:hover {
 {
     
     nav{
-        margin-top: 10px;
+        margin-top: 30px;
         height: 100px;
+        margin-bottom: 10px;
     }
+    .cormmercialvideo{
+        margin-top: 20px;
 
+    }
     .barlow-semi-condensed-regular-p{
         font-family: "Barlow Semi Condensed", sans-serif;
         font-weight: 400;
