@@ -11,6 +11,7 @@
 body{
     /*
     background-color: rgb(231, 231, 231);*/
+    
     background-color: #EDB1B3;
 }
 
@@ -74,6 +75,8 @@ nav {
     align-items: center;
     height: 60px;
     padding: 0 5px; 
+    background-color: #e7e7e7;
+
 }
 /*vores burger menu med de 3 tegn der bliver til et kryds når man klikker den*/
 #burger{
@@ -190,16 +193,16 @@ footer{
     /*og får det andet frem*/
 
 
-    
+
     /*vi gør vores ting lidt større*/
     nav{
         height: 100px;;
         margin-top: 10px;
         /*
         background-color: #e7e7e7;
-        */
+       */
         background-color: #EDB1B3;
-
+ 
     }
     #burger{
         width: 75px;
