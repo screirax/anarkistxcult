@@ -105,8 +105,8 @@ nav {
 .buynowmobile {
     background-color: #E1C118; 
     border: none;
-    color: white;
-    padding: 6px 32px;
+    color: rgb(0, 0, 0);
+    padding: 6px 50px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -117,10 +117,10 @@ nav {
     margin-left: 40px;
 }
 .learnnowmobile {
-    background-color: #504924; 
+    background-color: #91833f; 
     border: none;
-    color: white;
-    padding: 6px 22px;
+    color: rgb(0, 0, 0);
+    padding: 6px 40px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -260,6 +260,7 @@ button:hover {
         grid-template-columns: 45fr 55fr;
         width: 100%;
         height: 75px;
+        margin-bottom: 10px;
     }
     footer p{
         text-align: left;
@@ -268,6 +269,7 @@ button:hover {
     }
     footer h3{
         text-align: left;
+        margin-top: 10px;
         margin-left: 75px;
     }
 
@@ -322,7 +324,10 @@ button:hover {
         font-style: normal;
         font-size: 28px;
     }
-
+    button{
+        height: 75px;
+        width: 150px;    
+    }
     video{
         height: 825px;
     }
