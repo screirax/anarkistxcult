@@ -57,13 +57,19 @@ body{
     margin-left: 40px;
 
 }
-
+/*
 nav{
     display: grid;
-    grid-template-columns: 3fr 97fr;
+    grid-template-columns: 5fr 95fr;
     align-items: center;
-    height: 50px;
+    height: 60px;
     padding:0px 5px 0px 5px;
+}*/
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 5px; 
 }
 #burger{
     display: grid;
@@ -129,6 +135,16 @@ nav{
     display: flex;
     align-items: center;
 }
+.bannermobile {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    margin-left: auto; }
+
+.bannermobile img {
+    max-width: 100%; 
+    height: auto; 
+}
 #product{
     display: none;
 }
@@ -144,9 +160,13 @@ footer{
 .cormmercialvideo{
     display: none;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .mobileonly{
+        display: none;
+    }
+    .bannermobile{
         display: none;
     }
     nav{
