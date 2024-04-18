@@ -12,6 +12,11 @@ body{
     background-color: rgb(231, 231, 231);
 
 }
+
+
+
+
+/*dette er vores special fonts som vi har downloadet også skrivet lidt om i dem*/
 .barlow-semi condensed-regular {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 400;
@@ -57,20 +62,18 @@ body{
     margin-left: 40px;
 
 }
-/*
-nav{
-    display: grid;
-    grid-template-columns: 5fr 95fr;
-    align-items: center;
-    height: 60px;
-    padding:0px 5px 0px 5px;
-}*/
+
+
+
+
+
 nav {
     display: flex;
     align-items: center;
     height: 60px;
     padding: 0 5px; 
 }
+/*vores burger menu med de 3 tegn der bliver til et kryds når man klikker den*/
 #burger{
     display: grid;
     gap: 3px;
@@ -94,7 +97,7 @@ nav {
   .change .barthree {
     transform: translate(0, -11px) rotate(45deg);
   }
-
+/*dette er hoved div til mobile siden af koden*/
 #mobileonly{
     display: flex;
     flex-direction: column;
@@ -102,6 +105,7 @@ nav {
     margin-left: 40px;
 
 }
+/*disse 2 er vores 2 knapper i mobile som man kan klikke på til at gå til en tom side*/
 .buynowmobile {
     background-color: #E1C118; 
     border: none;
@@ -145,6 +149,7 @@ nav {
     max-width: 100%; 
     height: auto; 
 }
+/*fjerner alt der ikke har med mobile at gøre*/ 
 #product{
     display: none;
 }
@@ -161,14 +166,24 @@ footer{
     display: none;
 }
 
+
+
+
+
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /*fjerner alt mobile */
+    /*og får det andet frem*/
     .mobileonly{
         display: none;
     }
     .bannermobile{
         display: none;
     }
+    /*vi gør vores ting lidt større*/
     nav{
         height: 100px;;
         margin-top: -10px;
@@ -179,6 +194,7 @@ footer{
     }
     .banner img{
         display: block;
+
     }
     .barone, .bartwo, .barthree {
         width: 50px;
@@ -192,12 +208,13 @@ footer{
         width: 100%;
         height: 600px;
     }
+    /*vi opretter en ny div til at indholde vores info*/
     #product{
         display: grid;
         align-items: center;
         grid-template-columns: 55fr 45fr;
     }
-
+    /*her kommer teksten ind som er på venstre side af vores hjemmeside*/
     #productinfo{
         background-color: #e7e7e7;
         display: flex;
@@ -208,6 +225,7 @@ footer{
         height: 600px;
 
     }
+    /*vi får fonten lavet om her*/
     .permanent-marker-regular {
         font-family: "Permanent Marker", cursive;
         font-weight: 700;
@@ -223,7 +241,7 @@ footer{
         font-style: normal;
         font-size: 15px;
     }
-    
+    /*ny knap der*/
     button {
     background-color: #E1C118; 
     border: none;
@@ -253,7 +271,7 @@ button:hover {
         height: auto; 
         display: block; 
     }
-
+    /*footer med basalt kontakt info*/
     footer{
         display: grid;
         background-color: #b4b4b4;
@@ -275,6 +293,12 @@ button:hover {
 
       
 }
+
+
+
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px){
     .permanent-marker-regular {
@@ -286,7 +310,7 @@ button:hover {
         font-style: normal;
         font-size: 12px;
     }
-
+    /*der kommer en video ind der automatisk fælger med størrelsen */
     .cormmercialvideo{
         display: block;
         width: 100%;
@@ -309,6 +333,12 @@ button:hover {
     }
 }
 
+
+
+
+
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
@@ -323,6 +353,9 @@ button:hover {
         font-weight: 400;
         font-style: normal;
         font-size: 28px;
+    }
+    .banner{
+        margin-left: 40px;
     }
     button{
         height: 75px;
