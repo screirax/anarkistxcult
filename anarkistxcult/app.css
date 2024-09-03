@@ -8,25 +8,209 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /*
+    background-color: rgb(231, 231, 231);*/
+    
+    background-color: #EDB1B3;
+}
+
+
+
+
+/*dette er vores special fonts som vi har downloadet også skrivet lidt om i dem*/
+.barlow-semi condensed-regular {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .barlow-semi-condensed-regular-h1mobile{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+.barlow-semi-condensed-regular-h1mobile-h3{
+    font-family: "Permanent Marker", cursive;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: px;
+    margin-left: 40px;
+    
+
+}
+.barlow-semi-condensed-regular-p{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 40px;
+
+}
+/*dette er vores special fonts som vi har downloadet også skrivet lidt om i dem*/
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 5px; 
+    background-color: #e7e7e7;
+
+}
+/*vores burger menu med de 3 tegn der bliver til et kryds når man klikker den*/
+#burger{
+    display: grid;
+    gap: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+.barone, .bartwo, .barthree {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /*det er her hvor den siger hvordan burger menu ændrer sig*/
+  .change .barone {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bartwo {opacity: 0;}
+  
+  .change .barthree {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+/*dette er hoved div til mobile siden af koden*/
+#mobileonly{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+
+}
+/*disse 2 er vores 2 knapper i mobile som man kan klikke på til at gå til en tom side*/
+.buynowmobile {
+    background-color: #E1C118; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 50px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px; 
+    margin-left: 40px;
+}
+.learnnowmobile {
+    background-color: #91833f; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 40px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px; 
+    margin-left: 10px;
+}
+.picturesmobile{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.bannermobile {
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    margin-left: auto; }
+
+.bannermobile img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/*fjerner alt der ikke har med mobile at gøre*/ 
+#product{
+    display: none;
+}
+#productinfo{
+    display: none;
+}
+footer{
+    display: none;
+}
+.banner img{
+    display: none;
+}
+.cormmercialvideo{
+    display: none;
+}
+/*fjerner alt der ikke har med mobile at gøre*/ 
+
+
+
 
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /*fjerner alt mobile */
+    /*og får det andet frem*/
+    .mobileonly{
+        display: none;
+    }
+    .bannermobile{
+        display: none;
+    }
+    /*fjerner alt mobile */
+    /*og får det andet frem*/
+
+
+
+    /*vi gør vores ting lidt større*/
     nav{
-        background-color: rgba(0,0,0,0.3);
-        display: grid;
-        grid-template-columns: 10fr 80fr;
-        align-items: center;
-        height: 75px;
-        padding:0px 5px 0px 5px;
+        height: 100px;;
+        margin-top: 10px;
+        /*
+        background-color: #e7e7e7;
+       */
+        background-color: #EDB1B3;
+ 
     }
     #burger{
-        display: grid;
-        gap: 3px;
-        display: inline-block;
-        cursor: pointer;
+        width: 75px;
+    }
+    .banner img{
+        
+        display: block;
+
     }
     .barone, .bartwo, .barthree {
         width: 50px;
@@ -35,57 +219,175 @@
         margin: 6px 0;
         transition: 0.4s;
       }
-      /*det er her hvor den siger hvordan burger menu ændrer sig*/
-      .change .barone {
-        transform: translate(0, 11px) rotate(-45deg);
-      }
-      
-      .change .bartwo {opacity: 0;}
-      
-      .change .barthree {
-        transform: translate(0, -11px) rotate(45deg);
-      }
       video{
-        background-color: blueviolet;
         display: grid;
         width: 100%;
         height: 600px;
     }
+    /*vi opretter en ny div til at indholde vores info*/
     #product{
         display: grid;
         align-items: center;
         grid-template-columns: 55fr 45fr;
     }
-
+    /*her kommer teksten ind som er på venstre side af vores hjemmeside*/
     #productinfo{
-        background-color: burlywood;
+        /*
+        background-color: #e7e7e7;*/
+        background-color: #EDB1B3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 100%;
-        height: 400px;
+        height: 600px;
 
     }
-    #productpicture{
-        background-color: cadetblue;
-        width: 100%;
-        height: 400px;
+    /*vi får fonten lavet om her*/
+    .permanent-marker-regular {
+        font-family: "Permanent Marker", cursive;
+        font-weight: 700;
+        font-style: normal;
+        margin-left: 30px;
+        margin-top: 80px;
+        font-size: 45px;
+        text-align: center;
+    }
+    .barlow-semi-condensed-regular-p{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+    }
+    /*ny knap der*/
+    button {
+    background-color: #E1C118; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 8px;
     }
 
-    footer{
-        background-color: chartreuse;
-        width: 100%;
-        height: 75px;
-    }
-
+button:hover {
+    background-color: #45a049; 
 }
+    #productpicture{
+        margin-top: 25px;
+        /*
+        background-color: rgb(231, 231, 231);
+        */
+        background-color: #EDB1B3;
+        max-width: 100%; 
+        margin: 0 auto;
+        height: 600px;
+    }
+    img {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+    /*footer med basalt kontakt info*/
+    footer{
+        display: grid;
+        background-color: #F75C22;
+        grid-template-columns: 45fr 55fr;
+        width: 100%;
+        height: 100px;
+        
+    }
+    footer p{
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 75px;
+    }
+    footer h3{
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 75px;
+    }
+
+      
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .permanent-marker-regular {
+        font-family: "Permanent Marker", cursive;
+    }
+    .barlow-semi-condensed-regular-p{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+    }
+    /*der kommer en video ind der automatisk fælger med størrelsen */
+    
+    .cormmercialvideo{
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #productinfo{
+        height: 600px;
+    }
+    footer p{
+        margin-left: 100px;
+        font-size: 12px;
+    }
+    footer h3{
+        margin-left: 100px;
+        font-size: 18px;
+    }
+    button{
+        height: 50px;
+        width: 125px;    
+    }
+}
+
+
+
+
+
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-    nav{
-        height: 100px;
-    }
     
-  
+    nav{
+        margin-top: 30px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .cormmercialvideo{
+        margin-top: 20px;
+
+    }
+    .barlow-semi-condensed-regular-p{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+    }
+    .banner{
+        margin-left: 40px;
+    }
+    button{
+        height: 75px;
+        width: 150px;    
+    }
     video{
         height: 825px;
     }
@@ -96,13 +398,20 @@
     }
 
     #productinfo{
-        height: 825px;
+        height: 850px;
 
     }
     #productpicture{
-        height: 825px;
+        height: 950px;
     }
     footer{
         height: 100px;
     }
+    footer p{
+        margin-left: 150px;
+    }
+    footer h3{
+        margin-left: 150px;
+    }
+
 }

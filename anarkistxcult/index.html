@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AnarkistXCult Landing Page</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <div id="burger" onclick="myFunction(this)"><!--når man klikker på burger menu ændrer den sig til et kryds-->
+            <div class="barone"></div>
+            <div class="bartwo"></div>
+            <div class="barthree"></div>
+        </div>
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }           
+        </script><!--denne funktion bruges til at sige at når man klikker skal menuen change-->
+        <!--der er 2 forskellige banner her 1 til mobil og en til website-->
+        <div class="banner"><img src="pictures/banner.png"></div>
+        <div class="bannermobile"><img src="pictures/bannermobile.png"></div>
+    </nav>
+
+
+
+
+
+    <!--det er kun mobile der er under her-->
+    <div class="mobileonly">
+        <h1 class="barlow-semi-condensed-regular-h1mobile">Prøv den nye Smagsoplevelse</h1>
+        <h3 class="barlow-semi-condensed-regular-h1mobile-h3">Earlybird</h3>
+        <p class="barlow-semi-condensed-regular-p">En syrlig øl, der tager dig på en smagsrejse til paradis<br> i en letdrikkelig frugtøl.</p>
+
+        <a href="buy.html" class="button-container">
+            <button class="buynowmobile">Køb nu</button>
+            <button class="learnnowmobile">Learn more</button>
+
+        </a>
+        <figure>
+        <img  class="picturesmobile"  src="pictures/cultbeersmall.png">
+        </figure>
+
+    </div>
+
+
+
+
+
+
+    <!--video bliver vist her med en autoloop der gør at den kommer til at starte om når den er færdig-->
+    <video class="cormmercialvideo" controls>
+        <source src="video/Anakist-x-Cult-Reklame-Video.mp4">
+    </video>
+    <!--skal bruge dette sriipt jeg fandt for at den laver autoplay i chroome-->
+    <script>
+        document.getElementById('vid').play();
+    </script>
+    <!--div til vores produkt hvor der er tekst til venstre og billede til højre-->
+    <div id="product"> 
+        <section id="productinfo">
+            <!--tekst kommer her med bestemte class for de fonts vi har downlaodet-->
+            <h1 class="permanent-marker-regular">Earlybird</h1>
+            <p class="barlow-semi-condensed-regular-p">Anarkist har indgået et samarbejde med Cult Energy<br>
+                om at udvikle en limited edition af øl i løbet af 2024.<br><br><br>
+
+                Vores valget er faldet på en Berliner Weisse.<br>
+                En syrlig øl, syrnet med lactobacillus-kultur og tilsat ananas<br>
+                der tager dig på en smagsrejse til paradis i en<br>
+                letdrikkelig frugtøl. Tørhumlet med nøje udvalgte humlesorter<br>
+                forstærker frugtens smag og aroma. Ananasen tilføjer<br>
+                et let syrligt touch, der gør øllet frisk og læskende. </p>
+                <!--knap der lyser op hvis du hover over den-->
+                <a href="buy.html"><button>Køb nu</button></a>
+        </section>
+        <!--et billede der kan skaler til website størrelse-->
+        <figure id="productpicture">
+            <img class="pictures" src="pictures/cultbeerwhite.png">            
+        </figure>
+    </div>
+
+        <!--basalt footer med contakt info-->
+    <footer>
+        <div class="footer-info">
+            <h3>Contact Information</h3>
+            <p>Albanigade 20, 5000 Odense</p>
+            <p>Email: cultcollab@hotmail.com</p>
+            <p>Phone: +4599989796</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
